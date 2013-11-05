@@ -1,0 +1,17 @@
+<div class="control-group">
+  <label for="from" class="control-label">from</label>
+  <div class="controls">
+    <%- contentTag('input', redirect.from, {type:'text', class:'span6', name:'from', placeholder: 'you@domain.com'}) %>
+  </div>
+</div>
+<div class="control-group">
+  <label for="to" class="control-label">to</label>
+  <div class="controls">
+    <%- contentTag('input', redirect.to, {type:'text', class:'span6', name:'to', placeholder: 'you@gmail.com'}) %>
+  </div>
+</div>
+<div>
+  <small><em>See
+    <a href="http://www.postfix.org/VIRTUAL_README.html">postfix config</a>. e.g. <a href="https://gist.github.com/tedkulp/7312570">gist/tedkulp/7312570</a>
+  </em></small>
+</div>

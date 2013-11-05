@@ -21,7 +21,7 @@
   "bugs": {
     "url": "https://github.com/dscape/mailproxy/issues"
   },
-  "dependencies": {
-    "leveldown": "~0.7.0"
+  "engines": {
+    "node": "0.8.x"
   }
 }

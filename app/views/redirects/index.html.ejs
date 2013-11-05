@@ -1,0 +1,27 @@
+<div class="hero-unit">
+  <h2>MailProxy Configuration</h2>
+  <%- linkTo('Create a new entry in the proxy table', addRedirectPath, {class: 'btn pull-right'}); %>
+</div>
+
+<div id="redirects-list">
+<% if (redirects) { %>
+  <div class="row list-item" id="redirect-list">
+    <div class="span6">
+      <h3>From</h3>
+    </div>
+    <div class="span6">
+      <h3>To</h3>
+    </div>
+  </div>
+<% for (var i = 0, ii = redirects.length; i < ii; i++) { %>
+  <div class="row list-item" id="redirect-<%= redirects[i].id; %>">
+    <div class="span6">
+      <h3><%- linkTo(redirects[i].from, editRedirectPath(redirects[i].id)); %></h3>
+    </div>
+    <div class="span6">
+      <h3><%- linkTo(redirects[i].to, editRedirectPath(redirects[i].id)); %></h3>
+    </div>
+  </div>
+<% } %>
+<% } %>
+</div>
