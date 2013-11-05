@@ -1,0 +1,27 @@
+{
+  "name": "mailproxy",
+  "version": "0.0.0",
+  "description": "a poor person alternative to google apps",
+  "main": "lib/mailproxy.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dscape/mailproxy.git"
+  },
+  "keywords": [
+    "mail",
+    "proxy",
+    "smtp",
+    "whatever"
+  ],
+  "author": "nuno job @dscape",
+  "license": "Apache License, Version 2.0",
+  "bugs": {
+    "url": "https://github.com/dscape/mailproxy/issues"
+  },
+  "dependencies": {
+    "leveldown": "~0.7.0"
+  }
+}
